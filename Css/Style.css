@@ -1,0 +1,149 @@
+/* Estilos Globales */
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+/* Estilos del Contenedor */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos de la Barra de Navegación */
+.barraNavegacion {
+    width: 90%;
+    height: 100px;
+}
+
+.barraNavegacion nav {
+    display: flex;
+    height: 100%;
+    padding: 1px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContenedor {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;  
+}
+
+.barraNavegacion nav .logoContenedor img {
+    width: 100%;
+}
+
+.barraNavegacion nav .itemsMenu {
+    display: flex;
+    align-items: center;
+}
+
+.itemsMenu ul {
+    display: flex;
+    gap: clamp(10px, 7vw, 7vw);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 100%;
+    color: #087f5b;
+    font-weight: 500;
+    transition: color 0.3s ease; 
+}
+
+ul li a:hover {
+    color: #05a081; 
+}
+
+/* Estilos del Contenido Principal */
+.contenidoPrincipal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr)); 
+    place-items: center;
+    width: 90%;
+}
+
+.seccionInformacion {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    color: #1971c2;
+}
+
+.tituloSeccion, .descripcionSeccion {
+    width: 80%;
+}
+
+.tituloSeccion {
+    margin-bottom: 5rem;
+    font-size: 50px;
+}
+
+.descripcionSeccion p {
+    font-size: 20px;
+}
+
+/* Estilos de la Sección de Imágenes */
+.seccionImagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.imagenContenedor {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenContenedor img {
+    max-width: 500px;
+    width: 25vw;
+    object-fit: contain;
+}
+
+/* Estilos del Carrusel Principal y Secundario */
+.carruselPrincipal,
+.carruselSecundario {
+    display: flex;
+    gap: 20px; /* Cambiado de 2rem a 20px */
+    position: absolute;
+}
+
+.carruselPrincipal img,
+.carruselSecundario img {
+    max-width: 60px;
+}
+
+.carruselPrincipal {
+    bottom: 15px;
+}
+
+.carruselSecundario {
+    right: 6%;
+    flex-direction: column;
+}
+
