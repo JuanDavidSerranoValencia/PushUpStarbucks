@@ -129,7 +129,7 @@ ul li a:hover {
 .carruselPrincipal,
 .carruselSecundario {
     display: flex;
-    gap: 20px; /* Cambiado de 2rem a 20px */
+    gap: 20px; 
     position: absolute;
 }
 
